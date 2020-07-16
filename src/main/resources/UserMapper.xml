@@ -1,0 +1,11 @@
+<mapper namespace="com.robin.dao.IUserDao">
+    <!--  unique identification of SQL， it's made up of namespace.id  -->
+    <select id="findAll" resultType="com.robin.pojo.User">
+        select * from user;
+    </select>
+
+    <select id="findByCondition" resultType="com.robin.pojo.User" parameterType="com.robin.pojo.User">
+        select * from user where id = #{id} and username = #{username};
+    </select>
+
+</mapper>

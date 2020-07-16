@@ -1,0 +1,12 @@
+<configuration>
+    <!--  configuration of database  -->
+    <dataSource>
+        <property name="driverClass" value="com.mysql.jdbc.Driver" />
+        <property name="jdbcUrl" value="jdbc:mysql:///customize_mybatis" />
+        <property name="username" value="root" />
+        <property name="password" value="***" />
+    </dataSource>
+
+    <!--  source path of 'UserMapper.xml'  -->
+    <mapper resouce="UserMapper.xml"></mapper>
+</configuration>
